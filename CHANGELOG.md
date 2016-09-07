@@ -1,3 +1,6 @@
+## 4.1.0
+  - Support for non-AWS endpoints
+
 ## 4.0.6
   - Fix: Use the right `signature_version` for the SDK v2 #129
   - Fix an issue to prevent the output to upload empty file to S3 #128
