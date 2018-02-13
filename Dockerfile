@@ -27,6 +27,9 @@ RUN /usr/share/logstash/bin/logstash-plugin install logstash-output-http
 # Install Logstash Prune filter
 RUN /usr/share/logstash/bin/logstash-plugin install logstash-filter-prune
 
+# Install Logstash x-pack filter
+RUN /usr/share/logstash/bin/logstash-plugin install x-pack
+
 # Copy config resources to default location
 COPY ./resources /usr/share/logstash/vendor/jars
 COPY ./template /etc/logstash/conf.d/template
