@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -e
+
+# Build docs
+# http://docs.docker.com/reference/commandline/cli/#build
+
+# This should be run as root, from the project root directory
+
+if [ $1 ]
+then
+	OUTPUT=$1
+	docker build --no-cache --rm -t $OUTPUT .
+else
+	docker build --no-cache --rm -t frms-logstash-56 .
+fi
