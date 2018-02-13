@@ -1,0 +1,4 @@
+NGUSERNAME [a-zA-Z\.\@\-\+_%]+
+NGUSER %{NGUSERNAME}
+SSLPROTOCOLTYPE (TLS|SSL)
+SSLPROTOCOL %{SSLPROTOCOLTYPE:ssl_protocol_type}v%{BASE10NUM:ssl_protocol_version}

@@ -1,0 +1,11 @@
+input {
+	$INPUT
+}
+
+filter {
+	$FILTER
+}
+
+output {
+	$OUTPUT
+}
