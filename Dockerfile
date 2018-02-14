@@ -10,7 +10,7 @@ RUN curl -s https://artifacts.elastic.co/downloads/logstash/logstash-5.6.7.deb -
  && apt-get install -y ./logstash-5.6.7.deb 
 
 RUN cd /code/; jgem build logstash-output-s3.gemspec
-RUN /usr/share/logstash/bin/logstash-plugin install logstash-output-s3-4.0.6.gem
+RUN /usr/share/logstash/bin/logstash-plugin install logstash-output-s3-4.0.6.gem --no-verify
 #RUN /usr/share/logstash/bin/logstash-plugin install --no-verify 
 
 # Approximately from frms-logstash-56
